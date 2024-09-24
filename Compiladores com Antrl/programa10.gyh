@@ -1,0 +1,35 @@
+#Erro sintático: 'Inesperado Token: PCReal' ou 'Inesperado Lexema: REAL' ou 'Esperado Token Var' 
+
+:DEC
+num1:INT
+num2:INT
+num3:INT
+aux:INT
+
+:PROG
+# Coloca 3 números em ordem crescente
+LER REAL
+LER num2
+LER num3
+SE num1 > num2 ENTAO
+   INI
+      aux := 2+3-4+5-6*5-1
+      num2 := num1
+      num1 := aux
+   FIM 
+SE num1 > num3 E num2 <= num4 E num1 > 3 OU num2 != num4 ENTAO
+   INI
+      aux := num3
+      num3 := num1
+      num1 := aux
+   FIM
+SE num2 > num3 ENTAO
+   INI
+      aux:= num3
+      num3:= num2
+     num2:=aux
+   FIM
+IMPRIMIR num1
+IMPRIMIR num2
+IMPRIMIR num3
+
